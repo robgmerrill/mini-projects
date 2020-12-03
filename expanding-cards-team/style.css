@@ -1,0 +1,15 @@
+/* universal styling - box-sizing */
+
+/* body - font family, display to center vert and hor, height set to full height, margin removed */
+
+/* panels container - display set to have items/panels side by side, 90% of width */
+
+/* target panels class - background size cover, bg position center, bg not repeating, color of text to white, heigh set to 80%, border radius, cursor set to pointer, flex property set equal on all (will be multiplied on active class), margin to give space between, position so that we can place h3 text, transition on flex propery (.7 sec and ease-in) */
+
+/* target the h3 within panel - font size, position, position bottom and left, eliminate margin, hide from view (will show on active) */
+
+/* Target the active class on panel - set flex to make image larger than the flex on .panel */
+
+/* target the h3 within the active panel - show the text, set transition to target opacity property (take place in .3s, use ease-in, delay .4s) */
+
+/* Create a media query for smaller than 400px that sets the container to full width and hides the 4th and fifth panel */
