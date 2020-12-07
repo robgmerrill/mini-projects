@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Steps</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- div class container -->
+    <div class="container">
+        <!-- div class progress container that holds progress line and circles-->
+        <div class="progress-container">
+            <!-- div with class and id of progress that we give color and styling to in css and js -->
+            <div class="progress" id="progress"></div>
+            <!-- 4 div's with class circle. The first one with additional active class, numbers 1 - 4-->
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+        </div>
+        <!-- button with class of btn and id of prev, text Prev -->
+        <button class="btn" id="prev" disabled>Prev</button>
+        <!-- button with class of btn and id of next, text Next -->
+        <button class="btn" id="next">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

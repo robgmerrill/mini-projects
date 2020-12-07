@@ -1,0 +1,31 @@
+/* Import Muli font from Google fonts */
+
+/* variables at root scope */
+/* border fill: #3498db; */
+/* border empty: #e0e0e0 */
+
+/* universal box sizing border box */
+
+/* body - ff Muli, bc #f6f7fb, display to flex, align items, justify content, height 100vh, margin zeroed out */
+
+/* container class -> text align center */
+
+
+/* .progress-container -> display flex, space between numbers, position relative to place circles using absolut, margin bottom 30px, max-width 100%, width 350 */
+
+/* .progress-container before pseudoselector -> content set to `` because... */
+/* background color var empty, position absolute, top 50, left 0, transform y axis, height 4px width 100%, z index -2 to hide behind blus */
+
+/* .progress -> bc var fill, position absolute, top 50%, left 0, transform y axis, height 4px, width 0, transition .4 ease, z index behind circles */
+
+/* .circle -> bc white, color #999, border radius 50, height 30, width 30, center text, border, transition .4 ease */
+
+/* active circle styling -> border color var fill */
+
+/* btn class -> bc color var fill, color: white, border radius, cursor, ff inherit, padding, margin, font size */
+
+/* active pseudoclass on button scale less than one for transform */
+
+/* take outline off of btn pseudo focus */
+
+/* on btn pseudo selector set bc color to var emtpy, cursor not-allowed */
