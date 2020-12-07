@@ -1,31 +1,94 @@
-/* Import Muli font from Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Ovo&display=swap');
 
-/* variables at root scope */
-/* border fill: #3498db; */
-/* border empty: #e0e0e0 */
+:root {
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+}
 
-/* universal box sizing border box */
+* {
+    box-sizing: border-box;
+}
 
-/* body - ff Muli, bc #f6f7fb, display to flex, align items, justify content, height 100vh, margin zeroed out */
+body {
+    font-family: 'Mulish';
+    background-color: #f6f7fb;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-/* container class -> text align center */
+.container {
+    text-align: center;
+}
 
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
 
-/* .progress-container -> display flex, space between numbers, position relative to place circles using absolut, margin bottom 30px, max-width 100%, width 350 */
+.progress-container::before {
+    content: '';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -2;
+}
 
-/* .progress-container before pseudoselector -> content set to `` because... */
-/* background color var empty, position absolute, top 50, left 0, transform y axis, height 4px width 100%, z index -2 to hide behind blus */
+.progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    width: 0%;
+    z-index: -1;
+    height: 4px;
+    transform: translateY(-50%);
 
-/* .progress -> bc var fill, position absolute, top 50%, left 0, transform y axis, height 4px, width 0, transition .4 ease, z index behind circles */
+}
 
-/* .circle -> bc white, color #999, border radius 50, height 30, width 30, center text, border, transition .4 ease */
+.circle {
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    border: 4px solid var(--line-border-empty);
+}
 
-/* active circle styling -> border color var fill */
+.circle.active {
+    border: 4px solid var(--line-border-fill)
+}
 
-/* btn class -> bc color var fill, color: white, border radius, cursor, ff inherit, padding, margin, font size */
+.btn {
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 0;
+    font-size: 14px;
+}
 
-/* active pseudoclass on button scale less than one for transform */
+.btn:active {
+    transform: scale(.98);
+}
 
-/* take outline off of btn pseudo focus */
+.btn:focus {
+    outline: 0;
+}
 
-/* on btn pseudo selector set bc color to var emtpy, cursor not-allowed */
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed
+}
